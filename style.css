@@ -1,0 +1,36 @@
+body {
+    background-color: blueviolet;
+    color: bisque;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.container {
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 2fr);
+    grid-gap: 20px;
+}
+
+.container div:nth-child(n) {
+    border: solid bisque;
+    padding: 40px;
+}
+
+#sixteen {
+    grid-column: 4/6;
+    grid-row: 3/5;
+    border-style: double;
+    border-width: 20px;
+}
+
+#calendar {
+    width: 70%;
+    margin: 30px auto;
+}
